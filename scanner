@@ -34,3 +34,8 @@ char scan(FILE*file)
    lastch=ch;
    return ch;
 }
+
+//无效词法记号
+//忽略空白字符
+while(ch==' '||ch=='\n'||ch=='\t')
+scan();
